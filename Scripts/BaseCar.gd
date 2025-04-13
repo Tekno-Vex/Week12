@@ -9,6 +9,9 @@ class_name BaseCar
 @onready var end_message = $UI/EndPopup/Message  # Pop-up text
 @onready var close_button = $UI/EndPopup/CloseButton  # Close button
 @onready var score_label = %Hud/ScoreLabel    # On-screen score display
+@onready var bgm_player = %BGMPLayer
+@onready var end_music_player = %EndMusicPlayer
+
 
 @export var STEER_SPEED = 1.5
 @export var STEER_LIMIT = 0.6
@@ -23,7 +26,8 @@ var score: int = 0
 
 
 func _ready():
-	init_transform = transform  # Save the starting position
+	init_transform = transform
+	bgm_player.play()  # Save the starting position
 	# Debugging node existence
 	print("Looking for FeedbackLabel and SirenSound...")
 
@@ -183,19 +187,30 @@ func update_score_display():
 	if score_label:
 		score_label.text = "Score: " + str(score)
 
+
+
+
 # End barrier pop-up display
 func display_end_message():
 	game_paused = true
 	Engine.time_scale = 0  # Freeze the game
 
-	feedback_label.visible = false  # Hide other messages
+	feedback_label.visible = false
 	end_popup.visible = true
+	
+	bgm_player.stop()
+	end_music_player.play()
 
-	end_message.text = "Final Score: " + str(score) + "\n\n"
-	end_message.text += "Stop signs are regulatory signs that indicate you must come to a complete stop before proceeding. In real life, you should:\n"
-	end_message.text += "- Stop completely before the white line or crosswalk.\n"
-	end_message.text += "- Look for other vehicles and pedestrians.\n"
-	end_message.text += "- Proceed only when it is safe to do so."
+	end_message.clear()  # Clear any existing text
+
+	var message_text = "[center]🏁 Final Score: " + str(score)+ "\n\n\n\n\n"
+	message_text += "🚦 Quick Traffic Tips for the Real World:\n\n\n\n\n"
+	message_text += "- 🛑 Stop signs = full stop, look around, go when safe.\n\n\n\n\n"
+	message_text += "- ⚠️ Speed limits = max speed allowed, not a suggestion!\n\n\n\n\n"
+	message_text += "Drive smart out there! Hit X to Play Again![/center]"
+
+	end_message.parse_bbcode(message_text)
+
 
 # Close pop-up and restart game
 func close_end_popup():
@@ -205,6 +220,9 @@ func close_end_popup():
 	end_popup.visible = false  # Hide pop-up
 	reset_score()
 	reset_car()  # Reset the car position
+	
+	end_music_player.stop()
+	bgm_player.play()
 
 func _on_oncoming_lane_entered(body: Node3D):
 	get_tree().change_scene_to_file("res://Scenes/bad_oncoming_traffic.tscn")

@@ -1,10 +1,14 @@
 extends Control
+@onready var player_a = $BadSound
+@onready var player_b = $Instructor
 
+func _ready():
+	player_a.connect("finished", Callable(self, "_on_player_a_finished"))
+	player_a.play()
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
+func _on_player_a_finished():
+	player_b.play()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
