@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b1e0v36w1uxu5"]
 
-[ext_resource type="PackedScene" uid="uid://3lopjcr5el2c" path="res://assets/Models/JosiahTree.fbx" id="1_lbohi"]
+[ext_resource type="PackedScene" uid="uid://3lopjcr5el2c" path="res://assets/World/JosiahTree.fbx" id="1_lbohi"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_e65x5"]
 radius = 0.695368

@@ -29,19 +29,13 @@ func _ready():
 	init_transform = transform
 	bgm_player.play()  # Save the starting position
 	# Debugging node existence
-	print("Looking for FeedbackLabel and SirenSound...")
+	print("Looking for FeedbackLabel...")
 
 	if has_node("UI/FeedbackLabel"):
 		feedback_label = get_node("UI/FeedbackLabel")
 		print("FeedbackLabel found!")
 	else:
 		print("Error: FeedbackLabel not found!")
-
-	if has_node("SirenSound"):
-		siren_sound = get_node("SirenSound")
-		print("SirenSound found!")
-	else:
-		print("Error: SirenSound not found!")
 		
 	if has_node("pluspoint"):
 		pluspoint = get_node("pluspoint")

@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://c7ot1ux4iiokk"]
 
-[ext_resource type="PackedScene" uid="uid://eucb2v74axsa" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_A.fbx" id="1_3qmef"]
-[ext_resource type="PackedScene" uid="uid://cymplkgiar8kq" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_B.fbx" id="2_ny7ft"]
-[ext_resource type="PackedScene" uid="uid://537apmsm1jad" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_C.fbx" id="3_5didk"]
-[ext_resource type="PackedScene" uid="uid://b6n1n7qe2kxxj" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_D.fbx" id="4_lrsj1"]
-[ext_resource type="PackedScene" uid="uid://b26aovfem684m" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_E.fbx" id="5_44v1v"]
-[ext_resource type="PackedScene" uid="uid://ccurl3w4drjoe" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_F.fbx" id="6_8wfk1"]
-[ext_resource type="PackedScene" uid="uid://dg3qftjlmpph5" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_G.fbx" id="7_adix5"]
-[ext_resource type="PackedScene" uid="uid://bwhfmxgtb3hth" path="res://assets/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/fbx/building_H.fbx" id="8_tfuam"]
+[ext_resource type="PackedScene" uid="uid://eucb2v74axsa" path="res://assets/World/Building/building_A.fbx" id="1_3qmef"]
+[ext_resource type="PackedScene" uid="uid://cymplkgiar8kq" path="res://assets/World/Building/building_B.fbx" id="2_ny7ft"]
+[ext_resource type="PackedScene" uid="uid://537apmsm1jad" path="res://assets/World/Building/building_C.fbx" id="3_5didk"]
+[ext_resource type="PackedScene" uid="uid://b6n1n7qe2kxxj" path="res://assets/World/Building/building_D.fbx" id="4_lrsj1"]
+[ext_resource type="PackedScene" uid="uid://b26aovfem684m" path="res://assets/World/Building/building_E.fbx" id="5_44v1v"]
+[ext_resource type="PackedScene" uid="uid://ccurl3w4drjoe" path="res://assets/World/Building/building_F.fbx" id="6_8wfk1"]
+[ext_resource type="PackedScene" uid="uid://dg3qftjlmpph5" path="res://assets/World/Building/building_G.fbx" id="7_adix5"]
+[ext_resource type="PackedScene" uid="uid://bwhfmxgtb3hth" path="res://assets/World/Building/building_H.fbx" id="8_tfuam"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_huiyv"]
 size = Vector3(16.127, 3.48132, 1.84241)

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bexxmtbx1afeb"]
 
 [ext_resource type="Script" path="res://Scripts/bad_stop.gd" id="1_vtpbp"]
-[ext_resource type="Texture2D" uid="uid://b7c0ltaur5r8o" path="res://bad stop instructor.jpg" id="2_rpovl"]
+[ext_resource type="Texture2D" uid="uid://b7c0ltaur5r8o" path="res://assets/Images/bad stop instructor.jpg" id="2_rpovl"]
 [ext_resource type="FontFile" uid="uid://cxi2psa1opte" path="res://assets/Font/ARCADE_N.TTF" id="3_n4ftx"]
-[ext_resource type="AudioStream" uid="uid://i1fd6uasry8c" path="res://assets/bad_stop.mp3" id="4_b6cjw"]
-[ext_resource type="AudioStream" uid="uid://cxglesw21xccw" path="res://assets/minuspoint.wav" id="5_a0jc0"]
+[ext_resource type="AudioStream" uid="uid://i1fd6uasry8c" path="res://assets/Music/bad_stop.mp3" id="4_b6cjw"]
+[ext_resource type="AudioStream" uid="uid://cxglesw21xccw" path="res://assets/Music/minuspoint.wav" id="5_a0jc0"]
 
 [node name="Bad_Stop" type="Control"]
 layout_mode = 3

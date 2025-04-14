@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmaxsj81o745w"]
 
 [ext_resource type="FontFile" uid="uid://cxi2psa1opte" path="res://assets/Font/ARCADE_N.TTF" id="1_4xnxy"]
-[ext_resource type="Script" path="res://Scenes/instructions.gd" id="1_uarpu"]
-[ext_resource type="Texture2D" uid="uid://be3wfyynixti7" path="res://assets/Models/Car/traffic_background.jpg" id="2_e0nla"]
-[ext_resource type="AudioStream" uid="uid://dgbe7sbwsg1uu" path="res://assets/No Destination.mp3" id="4_a0s4v"]
+[ext_resource type="Script" path="res://Scripts/instructions.gd" id="1_uarpu"]
+[ext_resource type="Texture2D" uid="uid://be3wfyynixti7" path="res://assets/Images/traffic_background.jpg" id="2_e0nla"]
+[ext_resource type="AudioStream" uid="uid://dgbe7sbwsg1uu" path="res://assets/Music/No Destination.mp3" id="4_a0s4v"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r2uha"]
 texture = ExtResource("2_e0nla")

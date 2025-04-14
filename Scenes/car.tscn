@@ -1,15 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://c2kqwsup24kcx"]
+[gd_scene load_steps=13 format=3 uid="uid://c2kqwsup24kcx"]
 
 [ext_resource type="Script" path="res://Scripts/BaseCar.gd" id="1_fkpbr"]
-[ext_resource type="PackedScene" uid="uid://benmjny2guowm" path="res://assets/Models/Car/Wheel.glb" id="2_sgux3"]
+[ext_resource type="PackedScene" uid="uid://benmjny2guowm" path="res://assets/Car/Wheel.glb" id="2_sgux3"]
 [ext_resource type="PackedScene" uid="uid://8sl5gmdd6o6w" path="res://assets/camera/camera_3d.tscn" id="3_km5h1"]
-[ext_resource type="PackedScene" uid="uid://4y2ttyf5fj5s" path="res://assets/Models/Car/car_colored.fbx" id="4_0ix4a"]
+[ext_resource type="PackedScene" uid="uid://4y2ttyf5fj5s" path="res://assets/Car/car_colored.fbx" id="4_0ix4a"]
 [ext_resource type="FontFile" uid="uid://cxi2psa1opte" path="res://assets/Font/ARCADE_N.TTF" id="5_fcxb8"]
-[ext_resource type="AudioStream" uid="uid://605rpehsob6s" path="res://assets/Models/Police Siren (Fast) - Sound Effect (HD).mp3" id="5_vwwee"]
-[ext_resource type="AudioStream" uid="uid://baxyqf5btt6ea" path="res://assets/pluspoint.wav" id="6_i70ph"]
-[ext_resource type="AudioStream" uid="uid://cxglesw21xccw" path="res://assets/minuspoint.wav" id="7_5nimg"]
-[ext_resource type="AudioStream" uid="uid://by0oip24cc8lq" path="res://assets/game_music.mp3" id="9_boq5x"]
-[ext_resource type="AudioStream" uid="uid://d75mmitu0hb4" path="res://assets/Jeremy Blake - Powerup! ♫ NO COPYRIGHT 8-bit Music.mp3" id="10_yb4ij"]
+[ext_resource type="AudioStream" uid="uid://baxyqf5btt6ea" path="res://assets/Music/pluspoint.wav" id="6_i70ph"]
+[ext_resource type="AudioStream" uid="uid://cxglesw21xccw" path="res://assets/Music/minuspoint.wav" id="7_5nimg"]
+[ext_resource type="AudioStream" uid="uid://by0oip24cc8lq" path="res://assets/Music/game_music.mp3" id="9_boq5x"]
+[ext_resource type="AudioStream" uid="uid://d75mmitu0hb4" path="res://assets/Music/Jeremy Blake - Powerup! ♫ NO COPYRIGHT 8-bit Music.mp3" id="10_yb4ij"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_aniw4"]
 
@@ -192,9 +191,6 @@ theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 21
 text = "X"
-
-[node name="SirenSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_vwwee")
 
 [node name="pluspoint" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_i70ph")

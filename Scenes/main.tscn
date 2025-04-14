@@ -1,9 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://bqycjxamuefe4"]
+[gd_scene load_steps=18 format=3 uid="uid://bqycjxamuefe4"]
 
-[ext_resource type="Script" path="res://Scripts/CarReset.gd" id="1_ss6kg"]
 [ext_resource type="FontFile" uid="uid://5bjabx623yfe" path="res://assets/Font/ARCADE_R.TTF" id="2_3a8qv"]
 [ext_resource type="PackedScene" uid="uid://c2kqwsup24kcx" path="res://Scenes/car.tscn" id="2_47geq"]
-[ext_resource type="Material" uid="uid://cy4ku1rfnn1xh" path="res://Scenes/mat.tres" id="3_axe63"]
+[ext_resource type="Material" uid="uid://cy4ku1rfnn1xh" path="res://assets/World/mat.tres" id="3_axe63"]
 [ext_resource type="PackedScene" uid="uid://c441flqlh5vq" path="res://Scenes/roadimport.tscn" id="4_16pwf"]
 [ext_resource type="PackedScene" uid="uid://b1e0v36w1uxu5" path="res://Scenes/tree.tscn" id="5_arr5e"]
 [ext_resource type="PackedScene" uid="uid://dj7fa2vh2suol" path="res://Scenes/stopsign.tscn" id="6_j4p5i"]
@@ -47,10 +46,6 @@ size = Vector3(18.6553, 21.3702, 138.783)
 size = Vector3(867.761, 5.70129, 0.281708)
 
 [node name="Player" type="Node3D"]
-
-[node name="CarResetter" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("1_ss6kg")
 
 [node name="Hud" type="CanvasLayer" parent="."]
 unique_name_in_owner = true

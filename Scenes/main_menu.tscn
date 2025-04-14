@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://b8l6w5nmtdj35"]
 
-[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_r2a7d"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_r2a7d"]
 [ext_resource type="FontFile" uid="uid://cxi2psa1opte" path="res://assets/Font/ARCADE_N.TTF" id="1_r8ke2"]
-[ext_resource type="Texture2D" uid="uid://dk3pk4oyt52t" path="res://assets/Models/Street_Smarts_Title_Screen (1).jpg" id="1_uy4ky"]
-[ext_resource type="AudioStream" uid="uid://uvvpckvqoemc" path="res://assets/Pix - 3023 Mars Wars.mp3" id="4_nw12h"]
+[ext_resource type="Texture2D" uid="uid://dk3pk4oyt52t" path="res://assets/Images/Street_Smarts_Title_Screen (1).jpg" id="1_uy4ky"]
+[ext_resource type="AudioStream" uid="uid://uvvpckvqoemc" path="res://assets/Music/Pix - 3023 Mars Wars.mp3" id="4_nw12h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nbiit"]
 texture = ExtResource("1_uy4ky")
